@@ -25,7 +25,7 @@ body{
     left: -50%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
+    background: linear-gradient(0deg,transparent,transparent,#00fffb,#00fffb,#00fffb);
     transform-origin: bottom right;
     z-index: 1;
     animation: animate 6s linear infinite;
@@ -37,7 +37,7 @@ body{
     left: -50%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
+    background: linear-gradient(0deg,transparent,transparent,#00fffb,#00fffb,#00fffb);
     transform-origin: bottom right;
     z-index: 1;
     animation: animate 6s linear infinite;
@@ -55,7 +55,7 @@ body{
     left: -50%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg,transparent,transparent,#fb0082,#fb0082,#fb0082);
+    background: linear-gradient(0deg,transparent,transparent,#fb0000,#fb0000,#fb0000);
     transform-origin: bottom right;
     z-index: 1;
     animation: animate 6s linear infinite;
@@ -68,20 +68,20 @@ body{
     left: -50%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg,transparent,transparent,#fd4582,#fd4582,#fd4582);
+    background: linear-gradient(0deg,transparent,transparent,#fb0000,#fb0000,#fb0000);
     transform-origin: bottom right;
     z-index: 1;
     animation: animate 6s linear infinite;
     animation-delay: -4.5s;
 }
-.bordertine::before{
+/* .bordertine::before{
     content: '';
     position: absolute;
     top: -50%;
     left: -50%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg,transparent,transparent,rgb(187, 0, 255),rgb(193, 4, 250),orange);
+    background: linear-gradient(0deg,transparent,transparent,rgb(187, 0, 255),rgb(187, 0, 255),rgb(187, 0, 255));
     transform-origin: bottom right;
     z-index: 1;
     animation: animate 6s linear infinite;
@@ -94,12 +94,12 @@ body{
     left: -50%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg,transparent,transparent,orange,orange,orange);
+    background: linear-gradient(0deg,transparent,transparent,rgb(187, 0, 255),rgb(187, 0, 255),rgb(187, 0, 255));
     transform-origin: bottom right;
     z-index: 1;
     animation: animate 6s linear infinite;
     animation-delay: -6s;
-}
+} */
 @keyframes animate {
     0%{
         transform: rotate(0deg);

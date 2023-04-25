@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish</title>
+</head>
+<body>
+    <div class="container">
+        <i style="--clr:#00ff0a;"></i>
+        <i style="--clr:#ff0057;"></i>
+        <i style="--clr:#fffd44;"></i>
+        <div class="login">
+            <h2>Sign Up</h2>
+            <div class="inputbx">
+                <input type="text" placeholder="Username">
+            </div>
+            <div class="inputbx">
+                <input type="email" placeholder="E-mail">
+            </div>
+            <div class="inputbx">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="inputbx">
+                <input type="submit" value="Sign in">
+            </div>
+            <div class="links">
+                <!-- <a href="#">Forgot Password?</a> -->
+                <a href="index.html">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #111;
+        }
+        .container{
+            position: relative;
+            width: 500px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container i{
+            position: absolute;
+            inset: 0;
+            border: 2px solid #fff;
+            transition: 0.5s;
+        }
+        .container i:nth-child(1){
+            border-radius:57% 43% 57% 43% / 35% 57% 43% 65% ;
+            animation: animate 6s linear infinite;
+        }
+        .container i:nth-child(2){
+            border-radius: 23% 77% 23% 77% / 81% 16% 84% 19%;
+            animation: animate 4s linear infinite;
+        }
+        .container i:nth-child(3){
+            border-radius: 57% 43% 57% 43% / 35% 57% 43% 65%;
+            animation: animate2 10s linear infinite;
+        }
+        @keyframes animate{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+
+        } 
+        @keyframes animate2{
+            0%{
+                transform: rotate(360deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+
+        }
+        .container:hover i{
+            border: 4px solid var(--clr);
+            filter: drop-shadow(0 0 20px var(--clr));
+        }
+        .container .login{
+            position: absolute;
+            width: 380px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .container .login h2{
+            font-size: 2em;
+            color: #fff;
+        }
+        .container .login .inputbx{
+            position: relative;
+            width: 100%;
+        }
+        .container .login .inputbx input{
+            position: relative;
+            width: 100%;
+            padding: 12px 20px;
+            background: transparent;
+            border: 2px solid #fff;
+            border-radius: 40px;
+            font-size: 1.2em;
+            color: #fff;
+            box-shadow: none;
+            outline: none;
+        }
+        .container .login .inputbx input::placeholder{
+            color: rgba(255, 255, 255, 0.75);
+        }
+        .container .login .inputbx input[type='submit']{
+            background: linear-gradient(45deg,#ff357a,#fff172);
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+        .container .login .inputbx input[type='submit']:hover{
+            background: linear-gradient(45deg,rgb(167, 2, 243),rgb(253, 5, 249));
+        }
+        .container .login .links{
+            position: relative;
+            width: 100%;
+            display: flex;
+            /* justify-content: space-between; */
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            font-size: 20px;
+        }
+        .container .login .links a{
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</body>
+</html>
